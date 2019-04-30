@@ -22,7 +22,7 @@ function start() {
         if (err) throw err;
         choiceArray = []
         for (var i = 0; i < res.length; i++) {
-            console.log("Product: " + res[i].product_name + "|| Department: " + res[i].department_name + " || Price: " + res[i].price + " || Stock Quantity: " + res[i].stock_quantity);
+            console.log("Product: " + res[i].product_name + " || Department: " + res[i].department_name + " || Price ($): " + res[i].price + " || Stock Quantity: " + res[i].stock_quantity);
             choiceArray.push(res[i].product_name);
         }
         choiceArray.push("EXIT")
